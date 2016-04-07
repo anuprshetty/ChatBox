@@ -1,0 +1,17 @@
+{
+  "name": "chatbox",
+  "version": "1.0.0",
+  "description": "An instant messaging app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Anup Shetty",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0",
+    "dotenv": "^16.3.1"
+  }
+}
