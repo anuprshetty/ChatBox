@@ -8,3 +8,15 @@ var btn = document.getElementById("send");
 var output = document.getElementById("output");
 var feedback = document.getElementById("feedback");
 
+// emit events
+btn.addEventListener("click", function () {
+  socket.emit("chat", {
+    message: message.value,
+    handle: handle.value,
+  });
+});
+
+message.addEventListener("keypress", function () {
+  socket.emit("typing", handle.value);
+});
+
